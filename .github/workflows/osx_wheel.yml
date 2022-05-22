@@ -48,9 +48,7 @@ jobs:
       - name: Install packages
         run: | 
           brew install coreutils \
-          && brew install gcc \
-          $$ brew install boost
-
+          && brew install gcc
       - name: Build wheel
         run: ./scripts/build-wheels-macOS.sh
 
